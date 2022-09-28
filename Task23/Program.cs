@@ -6,13 +6,11 @@ int getNumberFromUser(string userInformation)
     int result = 0;
     Console.Write($"{userInformation} ");
     while (!int.TryParse(Console.ReadLine(), out result) || result <= 1)
-    
     {
         Console.Write($"Введите целое число больше единицы. {userInformation} ");
     }
     return result;
 }
-
 
 int[] tableQuarterNumber(int number)
 {
@@ -25,8 +23,9 @@ int[] tableQuarterNumber(int number)
 }
 int number = getNumberFromUser("Введите целое число N > 1: ");
 int[] table = tableQuarterNumber(number);
-
+Console.WriteLine("Последовательность из кубов чисел по условию задачи: ");
 for (int i = 0; i < table.Length; i++)
 {
+    
     Console.Write(table[i] + " ");
 } 
