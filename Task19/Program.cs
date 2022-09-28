@@ -8,7 +8,7 @@ int getRandomNumberFromRange(int minBorder, int maxBorder)
     return result;
 }
 
-int randomNumber = getRandomNumberFromRange(34543, 34544);
+int randomNumber = getRandomNumberFromRange(9999, 100000);
 
 int number = randomNumber;
 int reversNumber = 0;
